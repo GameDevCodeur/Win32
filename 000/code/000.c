@@ -18,5 +18,7 @@ int main(void)
   }
   
   platform_system_shutdown();
+  
+  return 0;
 	
 }

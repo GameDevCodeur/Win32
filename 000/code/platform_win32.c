@@ -22,15 +22,15 @@
 		state.hInstance     = GetModuleHandleA(NULL);
 		running 			= TRUE;
 		
-		WNDCLASS wc         = {0};
+		WNDCLASSA wc        = {0};
 		wc.lpszClassName    = "Ma classe de fenetre";
 		wc.lpfnWndProc      = WindowProcessMessage;
 		wc.hInstance        = state.hInstance;
 		
-		if(!RegisterClass(&wc)) { return FALSE; }
+		if(!RegisterClassA(&wc)) { return FALSE; }
 		
 		state.hwnd = CreateWindowA (
-										"Ma classe de fenetre", 
+										wc.lpszClassName, 
 										application_name, 
 										WS_OVERLAPPEDWINDOW, 
 										x, y, width, height, 
@@ -41,7 +41,7 @@
 		
 		if(state.hwnd == NULL) { return FALSE; }
 		
-		ShowWindow(state.hwnd, SW_SHOW);
+		ShowWindowAsync(state.hwnd, SW_SHOW);
 		
 		return TRUE;
 		
@@ -58,6 +58,7 @@
 				DispatchMessageA(&message);
 			}    
 			// Faites des trucs de jeu ici
+			Sleep(1);
 		}
 		
 		return TRUE;
