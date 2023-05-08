@@ -10,9 +10,9 @@
 	struct {
 		HINSTANCE hInstance;
 		HWND hwnd;	
-	} state;
+	} static state;
 
-	b8 running;
+	static b8 running;
 
 	LRESULT CALLBACK WindowProcessMessage(HWND, UINT, WPARAM, LPARAM);
 
