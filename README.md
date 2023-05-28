@@ -6,5 +6,5 @@ Télécharger Notepad++ - https://notepad-plus-plus.org/downloads/<br>
 001 - Mise en place Surface et Renderer. <br>
 002 - Redimensionner la Surface et afficher des Pixiels. <br>
 003 - Afficher une ligne (introduction). <br>
-004 - Optimisation de l'affichage d'une ligne <br>
-
+004 - Optimisation de l'affichage d'une ligne. <br>
+04a - Afficher une ligne Algorithme DDA. <br>
