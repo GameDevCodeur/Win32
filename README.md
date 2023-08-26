@@ -8,3 +8,4 @@ Télécharger Notepad++ - https://notepad-plus-plus.org/downloads/<br>
 003 - Afficher une ligne (introduction). <br>
 004 - Optimisation de l'affichage d'une ligne. <br>
 04a - Afficher une ligne Algorithme DDA. <br>
+009 - Afficher une ligne Algorithme BRESSENHAM. <br>
